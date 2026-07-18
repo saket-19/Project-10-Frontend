@@ -1,0 +1,165 @@
+{
+    "Login": "Login",
+    "Sign In": "Sign In",
+    "Sign Up": "Sign Up",
+    "Forget my password?": "Forget my password?",
+    "Login Id": "Login Id",
+    "Password": "Password",
+    "UserRegistration": "User Registration",
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "LoginId": "Login Id",
+    "DateOfBirth": "Date of Birth",
+    "Gender": "Gender",
+    "Mobile": "Mobile",
+    "Buttons": {
+        "SignUp": "Sign Up",
+        "Reset": "Reset"
+    },
+    "GenderOptions": {
+        "Select": "------------Select------------",
+        "Male": "Male",
+        "Female": "Female"
+    },
+    "Greetings": {
+        "HiUser": "Hi, {{name}} ( {{role}} )",
+        "HiGuest": "Hi, Guest"
+    },
+    "Links": {
+        "MyProfile": "My Profile",
+        "ChangePassword": "Change Password",
+        "AddUser": "Add User",
+        "UserList": "User List",
+        "AddRole": "Add Role",
+        "RoleList": "Role List",
+        "AddCollege": "Add College",
+        "CollegeList": "College List",
+        "AddStudent": "Add Student",
+        "StudentList": "Student List",
+        "AddMarksheet": "Add Marksheet",
+        "MarksheetList": "Marksheet List",
+        "AddCourse": "Add Course",
+        "CourseList": "Course List",
+        "AddSubject": "Add Subject",
+        "SubjectList": "Subject List",
+        "AddTimetable": "Add Timetable",
+        "TimetableList": "Timetable List",
+        "AddFaculty": "Add Faculty",
+        "FacultyList": "Faculty List",
+        "Logout": "Logout",
+        "Dashboard": "Dashboard",
+        "Login": "Login",
+        "signup": "signup",
+        "user": "User",
+        "role": "Role",
+        "college": "College",
+        "course": "Course",
+        "subject": "Subject",
+        "student": "Student",
+        "marksheet": "Marksheet",
+        "timetable": "Timetable",
+        "faculty": "Faculty",
+        "GetMarksheet": "Get Marksheet",
+        "meritlist": "Merit List",
+        "Fee": "Fee",
+        "AddFee": "Add Fee Structure",
+        "FeeList": "Fee Structure List",
+        "More": "More",
+        "Javadoc": "Javadoc"
+    },
+    "LocaleSelect": {
+        "Select": "-------Select-------",
+        "English": "English",
+        "Hindi": "Hindi"
+    },
+    "UserForm": {
+        "AddUser": "Add User",
+        "UpdateUser": "Update User",
+        "FirstName": "First Name",
+        "LastName": "Last Name",
+        "LoginId": "Login Id",
+        "Password": "Password",
+        "DateOfBirth": "Date of Birth",
+        "Gender": "Gender",
+        "Role": "Role",
+        "Mobile": "Mobile",
+        "AlternateMobile": "Alternate Mobile",
+        "Status": "Status",
+        "uploadImage": "Upload Image",
+        "Placeholders": {
+            "FirstName": "Enter First Name",
+            "LastName": "Enter Last Name",
+            "LoginId": "Enter Login ID",
+            "Password": "Enter Password",
+            "DateOfBirth": "Select Date of Birth",
+            "Mobile": "Enter Mobile No.",
+            "AlternateMobile": "Enter Alternate Mobile No."
+        },
+        "SelectOptions": {
+            "Select": "------------Select------------",
+            "Male": "Male",
+            "Female": "Female",
+            "Active": "Active",
+            "Inactive": "Inactive"
+        },
+        "Buttons": {
+            "Save": "Save",
+            "reset": "Reset",
+            "List": "List"
+        }
+    },
+    "FeeStructureForm": {
+        "AddFeeStructure": "Add Fee Structure",
+        "UpdateFeeStructure": "Update Fee Structure",
+        "Course": "Course",
+        "YearlyFee": "Yearly Fee",
+        "ExamFee": "Exam Fee",
+        "SubmissionDate": "Submission Date",
+        "SelectOptions": {
+            "Select": "------------Select------------"
+        },
+        "Placeholders": {
+            "BaseFee": "Enter Base Fee",
+            "ExamFee": "Enter Exam Fee",
+            "SubmissionDate": "Enter Submission Date"
+        },
+        "Buttons": {
+            "Save": "Save",
+            "reset": "Reset",
+            "List": "List"
+        }
+    },
+    "FeeStructureList": {
+        "Title": "Fee Structure List",
+        "EmptyTitle": "Fee Structure List",
+        "SelectOptions": {
+            "SelectCourse": "------------Select Course------------",
+            "SelectYear": "------------Select Year------------",
+            "FirstYear": "1st Year",
+            "SecondYear": "2nd Year",
+            "ThirdYear": "3rd Year",
+            "FourthYear": "4th Year"
+        },
+        "Placeholders": {
+            "SubmissionDate": "Submission Date"
+        },
+        "Buttons": {
+            "Search": "Search",
+            "Reset": "Reset",
+            "Previous": "Previous",
+            "New": "New",
+            "Delete": "Delete",
+            "Next": "Next",
+            "Back": "Back"
+        },
+        "Table": {
+            "SNo": "S.NO",
+            "CourseName": "Course Name",
+            "YearlyFees": "Yearly Fees",
+            "ExamFee": "Exam Fee",
+            "SubmissionDate": "Submission Date",
+            "Edit": "Edit",
+            "EditLink": "Edit"
+        }
+    }
+}

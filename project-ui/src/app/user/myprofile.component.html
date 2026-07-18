@@ -1,0 +1,100 @@
+<app-navbar></app-navbar>
+
+<div class="container my-5 pb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card shadow-lg p-4 mb-5" style="border-radius: 12px;">
+        <div class="card-body pb-4">
+
+          <h2 class="text-center mb-4" style="color: navy; font-weight: 700;">My Profile</h2>
+
+          <div *ngIf="form.message" class="alert alert-dismissible fade show" [ngClass]="form.error ? 'alert-danger' : 'alert-success'" role="alert">
+            {{ form.message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="form.message = ''"></button>
+          </div>
+
+          <form (ngSubmit)="myProfile()" #profileForm="ngForm">
+
+            <!-- First Name -->
+            <div class="mb-3">
+              <label class="form-label fw-bold">First Name <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text bg-light"><i class="fas fa-user"></i></span>
+                <input type="text" class="form-control" name="firstName" [(ngModel)]="form.data.firstName" placeholder="Enter First Name" required>
+              </div>
+              <small class="text-danger">{{ form.inputerror.firstName }}</small>
+            </div>
+
+            <!-- Last Name -->
+            <div class="mb-3">
+              <label class="form-label fw-bold">Last Name <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text bg-light"><i class="fas fa-user"></i></span>
+                <input type="text" class="form-control" name="lastName" [(ngModel)]="form.data.lastName" placeholder="Enter Last Name" required>
+              </div>
+              <small class="text-danger">{{ form.inputerror.lastName }}</small>
+            </div>
+
+            <!-- Login Id -->
+            <div class="mb-3">
+              <label class="form-label fw-bold">Login Id <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text bg-light"><i class="fas fa-envelope"></i></span>
+                <input type="text" class="form-control" name="loginId" [(ngModel)]="form.data.loginId" readonly placeholder="Enter Login ID">
+              </div>
+              <small class="text-danger">{{ form.inputerror.loginId }}</small>
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="mb-3">
+              <label class="form-label fw-bold">Date of Birth <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text bg-light"><i class="fas fa-calendar-alt"></i></span>
+                <input type="date" class="form-control" name="dob" [(ngModel)]="form.data.dob" [ngModel]="form.data.dob | date:'yyyy-MM-dd'" required>
+              </div>
+              <small class="text-danger">{{ form.inputerror.dob }}</small>
+            </div>
+
+            <!-- Gender -->
+            <div class="mb-3">
+              <label class="form-label fw-bold">Gender <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text bg-light"><i class="fas fa-venus-mars"></i></span>
+                <select class="form-select" name="gender" [(ngModel)]="form.data.gender" required>
+                  <option value="">------------Select------------</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <small class="text-danger">{{ form.inputerror.gender }}</small>
+            </div>
+
+            <!-- Mobile -->
+            <div class="mb-4">
+              <label class="form-label fw-bold">Mobile <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text bg-light"><i class="fas fa-phone"></i></span>
+                <input type="text" class="form-control" name="phone" [(ngModel)]="form.data.phone" maxlength="10" placeholder="Enter Mobile No." required>
+              </div>
+              <small class="text-danger">{{ form.inputerror.phone }}</small>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <button type="submit" class="btn btn-success px-4">
+                <i class="fas fa-save me-1"></i> Save
+              </button>
+              <button type="button" class="btn btn-primary px-4" (click)="forward('/userlist')">
+                <i class="fas fa-list me-1"></i> List
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

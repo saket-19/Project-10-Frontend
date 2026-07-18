@@ -1,0 +1,19 @@
+.input-group-addon {
+    box-shadow: 9px 8px 7px #001a33;
+}
+
+.hm {
+    background-image: url('/assets/files/add.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.card {
+    background-image: url('/assets/files/download.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

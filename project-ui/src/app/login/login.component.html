@@ -1,0 +1,113 @@
+<style type="text/css">
+  .input-group-addon {
+    box-shadow: 9px 8px 7px #001a33;
+  }
+
+  .hm {
+    background-image: url('assets/files/gemini.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;   /* Full viewport height */
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 25px;
+
+  }
+  .card-body{
+    background-image: url('assets/files/monsoon.jpg');
+    background-repeat: no-repeat;
+     background-size: cover;
+    background-position=center
+  }
+</style>
+
+<app-navbar></app-navbar>
+
+<div class="hm">
+  <main>
+    <div class="row pt-3">
+
+      <div class="col-md-4 "></div>
+
+      <div class="col-md-4 ">
+        <div class="card input-group-addon">
+          <div class="card-body">
+
+            <h3 class="text-center default-text text-dark">Login</h3>
+
+            <div>
+              <H4 align="center">
+                <div *ngIf="form.message && !form.error" class="alert alert-success alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert">&times;</button>
+                  {{ form.message }}
+                </div>
+              </H4>
+              <H4 align="center">
+                <div *ngIf="form.message && form.error" class="alert alert-danger alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert">&times;</button>
+                  {{ form.message }}
+                </div>
+              </H4>
+            </div>
+
+            <form (ngSubmit)="signIn()" #loginForm="ngForm">
+
+              <div class="md-form">
+
+                <!-- Login Id -->
+                <span class="pl-sm-5"><b>Login Id</b> <span style="color: red;">*</span></span><br>
+                <div class="col-sm-12">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fas fa-envelope grey-text" style="font-size: 1rem;"></i></div>
+                    </div>
+                    <input type="text" class="form-control" name="loginId" [(ngModel)]="form.data.loginId"
+                      placeholder="Enter Login ID" required>
+                  </div>
+                </div>
+                <font color="red" class="pl-sm-5">{{ form.inputerror.loginId }}</font><br>
+
+                <!-- Password -->
+                <span class="pl-sm-5"><b>Password</b> <span style="color: red;">*</span></span><br>
+                <div class="col-sm-12">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fas fa-lock grey-text" style="font-size: 1rem;"></i></div>
+                    </div>
+                    <input type="password" class="form-control" name="password" [(ngModel)]="form.data.password"
+                      placeholder="Enter Password" required>
+                  </div>
+                </div>
+                <font color="red" class="pl-sm-5">{{ form.inputerror.password }}</font><br>
+
+                <!-- Buttons -->
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success btn-md" style="font-size: 17px">
+                    Sign In
+                  </button>&nbsp;
+                  <button type="button" class="btn btn-primary btn-md" style="font-size: 17px" (click)="signUp()">
+                    Sign Up
+                  </button>
+                </div>
+
+                <!-- Forgot password -->
+                <div class="text-center mt-2">
+                  <a [routerLink]="['/forgotpassword']" class="fw-bold text-decoration-underline">
+                    Forget my password?
+                  </a>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4"></div>
+
+    </div>
+  </main>
+</div>
+
+<app-footer></app-footer>
